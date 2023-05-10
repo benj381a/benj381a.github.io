@@ -1,45 +1,68 @@
 
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	</head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
 
-	<body style="background-color:Silver">
-		<!--<h1><a style="color:firebrick" href="https://www.aula.dk/portal/#/overblik">AULA</a></h1>											   -->
-		<!--<h1><a style="color:Turquoise" href="https://app.meebook.com/elev-dashboard/">Meebook</a></h1>										   -->
-		<!--<h2><a style="color:HoneyDew" href="https://viborgskoler15.sharepoint.com/sites/Egeskovskolen">gl. Skolebord</a></h2>				   -->
-		<!--<h1><a style="color:Chartreuse" href="https://production.nordiccloud.dk/">ny Skolebord</a></h1>										   -->
-		<!--<h1><a style="color:Chocolate" href="https://www.matematikfessor.dk/">Matematikfessor</a></h1>										   -->
-		<!--<h1><a style="color:Indigo" href="https://www.skoletube.dk/?">Skoletube</a></h1>													   -->
-		<!--<h1><a style="color:LemonChiffon" href="file:///C:/Users/benj381a/Desktop/til%20de%20hutige.html">Til de hurtige</a></h1>			   -->
-		<!--<h1><a style="color:snow" href="https://kahoot.it/">Kahoot</a></h1>																	   -->
-		<!--<h1><a style="color:navy" href="https://abc.ordbogen.com/dictionary">ABC Ordbogen</a></h1>											   -->
-		<!--<h2><a style="color:mintcream" href="https://viborgskoler15.sharepoint.com/sites/Egeskovskolen/Apps/OneDriveApp/">gl. Onedrive</a></h2>-->
-		<!--<h1><a style="color:OliveDrab" href="https://production.nordiccloud.dk/mydocuments/s">ny Onedrive</a></h1> 							   -->
-	
-	</body>
-	
-	<script>
-		var x = {};
+<body style="background-color:Silver">
 
-		x['Aula'] = {};
-		x['Aula']['Url'] = 'https://www.aula.dk/portal/#/overblik';
-		x['Aula']['Color'] = 'firebrick'
-		x['Aula']['Size'] = 'h1'
+</body>
 
-        x['Meebook'] = {};
-        x['Meebook']['Url'] = 'https://app.meebook.com/elev-dashboard/';
-        x['Meebook']['Color'] = 'Turquoise'
-        x['Meebook']['Size'] = 'h1'
+<script>
+    var x = {};
 
-		for (var i in x) {
-			var text = document.createElement(x[i]['Size']);
-			var a = text.createElement('a');
-			a.style.color = x[i]['Color'];
-			var link = document.createTextNode(i);
-            a.appendChild(link);
-            a.href = x[i]['Url'];
-            document.body.appendChild(a);
-        }
-	</script>
+    x['Aula'] = {};
+    x['Aula']['Url'] = 'https://www.aula.dk/portal/#/overblik';
+    x['Aula']['Color'] = 'firebrick'
+    x['Aula']['Size'] = 'h1'
+
+    x['Meebook'] = {};
+    x['Meebook']['Url'] = 'https://app.meebook.com/elev-dashboard/';
+    x['Meebook']['Color'] = 'Turquoise'
+    x['Meebook']['Size'] = 'h1'
+
+    x['gl. Skolebord'] = {};
+    x['gl. Skolebord']['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen';
+    x['gl. Skolebord']['Color'] = 'HoneyDew'
+    x['gl. Skolebord']['Size'] = 'h2'
+
+    x['ny Skolebord'] = {};
+    x['ny Skolebord']['Url'] = 'https://production.nordiccloud.dk/';
+    x['ny Skolebord']['Color'] = 'Chartreuse'
+    x['ny Skolebord']['Size'] = 'h1'
+
+    x['Matematikfessor'] = {};
+    x['Matematikfessor']['Url'] = 'https://www.matematikfessor.dk/';
+    x['Matematikfessor']['Color'] = 'Chocolate'
+    x['Matematikfessor']['Size'] = 'h1'
+
+    x['Skoletube'] = {};
+    x['Skoletube']['Url'] = 'https://www.skoletube.dk/?';
+    x['Skoletube']['Color'] = 'Indigo'
+    x['Skoletube']['Size'] = 'h1'
+
+    x['Kahoot'] = {};
+    x['Kahoot']['Url'] = 'https://kahoot.it/';
+    x['Kahoot']['Color'] = 'snow'
+    x['Kahoot']['Size'] = 'h1'
+
+    x['ABC Ordbogen'] = {};
+    x['ABC Ordbogen']['Url'] = 'https://abc.ordbogen.com/dictionary';
+    x['ABC Ordbogen']['Color'] = 'navy'
+    x['ABC Ordbogen']['Size'] = 'h1'
+
+    x['gl. Onedrive'] = {};
+    x['gl. Onedrive']['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen/Apps/OneDriveApp/';
+    x['gl. Onedrive']['Color'] = 'mintcream'
+    x['gl. Onedrive']['Size'] = 'h2'
+
+    x['ny Onedrive'] = {};
+    x['ny Onedrive']['Url'] = 'https://production.nordiccloud.dk/mydocuments/s';
+    x['ny Onedrive']['Color'] = 'OliveDrab'
+    x['ny Onedrive']['Size'] = 'h1'
+
+    for (var i in x) {
+        document.body.innerHTML += '<' + x[i]['Size'] + '><a style="color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + i + '</a></' + x[i]['Size'] + '>';
+    }
+</script>
 </html>
