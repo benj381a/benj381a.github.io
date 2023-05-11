@@ -11,63 +11,74 @@
 <script>
     var x = {};
 
-    x['Aula'] = {};
-    x['Aula']['Url'] = 'https://www.aula.dk/portal/#/overblik';
-    x['Aula']['Color'] = 'firebrick'
-    x['Aula']['Size'] = 'h1'
+    x[0] = {};
+    x[0]['Name'] = 'Aula';
+    x[0]['Url'] = 'https://www.aula.dk/portal/#/overblik';
+    x[0]['Color'] = 'firebrick'
+    x[0]['Size'] = 'h1'
 
-    x['Meebook'] = {};
-    x['Meebook']['Url'] = 'https://app.meebook.com/elev-dashboard/';
-    x['Meebook']['Color'] = 'Turquoise'
-    x['Meebook']['Size'] = 'h1'
+    x[1] = {};
+    x[1]['Name'] = 'Meebook';
+    x[1]['Url'] = 'https://app.meebook.com/elev-dashboard/';
+    x[1]['Color'] = 'Turquoise'
+    x[1]['Size'] = 'h1'
 
-    x['gl. Skolebord'] = {};
-    x['gl. Skolebord']['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen';
-    x['gl. Skolebord']['Color'] = 'HoneyDew'
-    x['gl. Skolebord']['Size'] = 'h2'
+    x[2] = {};
+    x[2]['Name'] = 'gl. Skolebord';
+    x[2]['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen';
+    x[2]['Color'] = 'HoneyDew'
+    x[2]['Size'] = 'h2'
 
-    x['ny Skolebord'] = {};
-    x['ny Skolebord']['Url'] = 'https://production.nordiccloud.dk/';
-    x['ny Skolebord']['Color'] = 'Chartreuse'
-    x['ny Skolebord']['Size'] = 'h1'
+    x[3] = {};
+    x[3]['Name'] = 'ny Skolebord';
+    x[3]['Url'] = 'https://production.nordiccloud.dk/';
+    x[3]['Color'] = 'Chartreuse'
+    x[3]['Size'] = 'h1'
 
-    x['Matematikfessor'] = {};
-    x['Matematikfessor']['Url'] = 'https://www.matematikfessor.dk/';
-    x['Matematikfessor']['Color'] = 'Chocolate'
-    x['Matematikfessor']['Size'] = 'h1'
+    x[4] = {};
+    x[4]['Name'] = 'Matematikfessor';
+    x[4]['Url'] = 'https://www.matematikfessor.dk/';
+    x[4]['Color'] = 'Chocolate'
+    x[4]['Size'] = 'h1'
 
-    x['Skoletube'] = {};
-    x['Skoletube']['Url'] = 'https://www.skoletube.dk/?';
-    x['Skoletube']['Color'] = 'Indigo'
-    x['Skoletube']['Size'] = 'h1'
+    x[5] = {};
+    x[5]['Name'] = 'Skoletube';
+    x[5]['Url'] = 'https://www.skoletube.dk/?';
+    x[5]['Color'] = 'Indigo'
+    x[5]['Size'] = 'h1'
 
-    x['Kahoot'] = {};
-    x['Kahoot']['Url'] = 'https://kahoot.it/';
-    x['Kahoot']['Color'] = 'snow'
-    x['Kahoot']['Size'] = 'h1'
+    x[6] = {};
+    x[6]['Name'] = 'Kahoot';
+    x[6]['Url'] = 'https://kahoot.it/';
+    x[6]['Color'] = 'snow'
+    x[6]['Size'] = 'h1'
 
-    x['ABC Ordbogen'] = {};
-    x['ABC Ordbogen']['Url'] = 'https://abc.ordbogen.com/dictionary';
-    x['ABC Ordbogen']['Color'] = 'navy'
-    x['ABC Ordbogen']['Size'] = 'h1'
+    x[7] = {};
+    x[7]['Name'] = 'ABC Ordbogen';
+    x[7]['Url'] = 'https://abc.ordbogen.com/dictionary';
+    x[7]['Color'] = 'navy'
+    x[7]['Size'] = 'h1'
 
-    x['gl. Onedrive'] = {};
-    x['gl. Onedrive']['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen/Apps/OneDriveApp/';
-    x['gl. Onedrive']['Color'] = 'mintcream'
-    x['gl. Onedrive']['Size'] = 'h2'
+    x[8] = {};
+    x[8]['Name'] = 'gl. Onedrive';
+    x[8]['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen/Apps/OneDriveApp/';
+    x[8]['Color'] = 'mintcream'
+    x[8]['Size'] = 'h2'
 
-    x['ny Onedrive'] = {};
-    x['ny Onedrive']['Url'] = 'https://production.nordiccloud.dk/mydocuments/s';
-    x['ny Onedrive']['Color'] = 'OliveDrab'
-    x['ny Onedrive']['Size'] = 'h1'
+    x[9] = {};
+    x[9]['Name'] = 'ny Onedriveny Onedrive';
+    x[9]['Url'] = 'https://production.nordiccloud.dk/mydocuments/s';
+    x[9]['Color'] = 'OliveDrab'
+    x[9]['Size'] = 'h1'
     
-    x['Matematik grundbog'] = {};
-    x['Matematik grundbog']['Url'] = 'https://minside.alinea.dk/mine-adgange';
-    x['Matematik grundbog']['Color'] = 'Red'
-    x['Matematik grundbog']['Size'] = 'h1'
+    x[10] = {};
+    x[10]['Name'] = 'Matematik grundbog';
+    x[10]['Url'] = 'https://minside.alinea.dk/mine-adgange';
+    x[10]['Color'] = 'Red'
+    x[10]['Size'] = 'h1'
 
     for (var i in x) {
-        document.body.innerHTML += '<' + x[i]['Size'] + '><a style="color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + i + '</a></' + x[i]['Size'] + '>';
+        document.body.innerHTML += '<' + x[i]['Size'] + '><a style="color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + x[i]['Name'] + '</a></' + x[i]['Size'] + '>';
         //document.body.innerHTML += 'Name: <input type="text" id="myText" value="Mickey">';
         //document.body.innerHTML += 'Url: <input type="text" id="myText" value="Mickey">';
         //document.body.innerHTML += 'Color: <input type="text" id="myText" value="Mickey">';
