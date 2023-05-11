@@ -60,6 +60,11 @@
     x['ny Onedrive']['Url'] = 'https://production.nordiccloud.dk/mydocuments/s';
     x['ny Onedrive']['Color'] = 'OliveDrab'
     x['ny Onedrive']['Size'] = 'h1'
+    
+    x['Grundbog'] = {};
+    x['Grundbog']['Url'] = 'https://minside.alinea.dk/mine-adgange';
+    x['Grundbog']['Color'] = 'Red'
+    x['Grundbog']['Size'] = 'h1'
 
     for (var i in x) {
         document.body.innerHTML += '<' + x[i]['Size'] + '><a style="color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + i + '</a></' + x[i]['Size'] + '>';
