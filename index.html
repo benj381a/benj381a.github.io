@@ -86,8 +86,8 @@
             var str2 = str.split(';');
 
             for (var i in str2) {
-                var number = parseInt(i.charAt(0));
-                console.log(i+number);
+                var number = parseInt(str2[i].charAt(0));
+                console.log(i+', '+number);
             }
         }
         function UpdateLinks() {
