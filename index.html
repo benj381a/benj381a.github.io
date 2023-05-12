@@ -8,82 +8,84 @@
 
 </body>
 
+
+</html>
 <script>
     var x = {};
 
     x[0] = {};
     x[0]['Name'] = 'Aula';
     x[0]['Url'] = 'https://www.aula.dk/portal/#/overblik';
-    x[0]['Color'] = 'firebrick'
-    x[0]['Size'] = 'h1'
+    x[0]['Color'] = 'firebrick';
+    x[0]['Size'] = 'h1';
 
     x[1] = {};
     x[1]['Name'] = 'Meebook';
     x[1]['Url'] = 'https://app.meebook.com/elev-dashboard/';
-    x[1]['Color'] = 'Turquoise'
-    x[1]['Size'] = 'h1'
+    x[1]['Color'] = 'Turquoise';
+    x[1]['Size'] = 'h1';
 
     x[2] = {};
     x[2]['Name'] = 'gl. Skolebord';
     x[2]['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen';
-    x[2]['Color'] = 'HoneyDew'
-    x[2]['Size'] = 'h2'
+    x[2]['Color'] = 'HoneyDew';
+    x[2]['Size'] = 'h2';
 
     x[3] = {};
     x[3]['Name'] = 'ny Skolebord';
     x[3]['Url'] = 'https://production.nordiccloud.dk/';
-    x[3]['Color'] = 'Chartreuse'
-    x[3]['Size'] = 'h1'
+    x[3]['Color'] = 'Chartreuse';
+    x[3]['Size'] = 'h1';
 
     x[4] = {};
     x[4]['Name'] = 'Matematikfessor';
     x[4]['Url'] = 'https://www.matematikfessor.dk/';
-    x[4]['Color'] = 'Chocolate'
-    x[4]['Size'] = 'h1'
+    x[4]['Color'] = 'Chocolate';
+    x[4]['Size'] = 'h1';
 
     x[5] = {};
     x[5]['Name'] = 'Skoletube';
     x[5]['Url'] = 'https://www.skoletube.dk/?';
-    x[5]['Color'] = 'Indigo'
-    x[5]['Size'] = 'h1'
+    x[5]['Color'] = 'Indigo';
+    x[5]['Size'] = 'h1';
 
     x[6] = {};
     x[6]['Name'] = 'Kahoot';
     x[6]['Url'] = 'https://kahoot.it/';
-    x[6]['Color'] = 'snow'
-    x[6]['Size'] = 'h1'
+    x[6]['Color'] = 'snow';
+    x[6]['Size'] = 'h1';
 
     x[7] = {};
     x[7]['Name'] = 'ABC Ordbogen';
     x[7]['Url'] = 'https://abc.ordbogen.com/dictionary';
-    x[7]['Color'] = 'navy'
-    x[7]['Size'] = 'h1'
+    x[7]['Color'] = 'navy';
+    x[7]['Size'] = 'h1';
 
     x[8] = {};
     x[8]['Name'] = 'gl. Onedrive';
     x[8]['Url'] = 'https://viborgskoler15.sharepoint.com/sites/Egeskovskolen/Apps/OneDriveApp/';
-    x[8]['Color'] = 'mintcream'
-    x[8]['Size'] = 'h2'
+    x[8]['Color'] = 'mintcream';
+    x[8]['Size'] = 'h2';
 
     x[9] = {};
     x[9]['Name'] = 'ny Onedrive';
     x[9]['Url'] = 'https://production.nordiccloud.dk/mydocuments/s';
-    x[9]['Color'] = 'OliveDrab'
-    x[9]['Size'] = 'h1'
-    
+    x[9]['Color'] = 'OliveDrab';
+    x[9]['Size'] = 'h1';
+
     x[10] = {};
     x[10]['Name'] = 'Matematik grundbog';
     x[10]['Url'] = 'https://minside.alinea.dk/mine-adgange';
-    x[10]['Color'] = 'Red'
-    x[10]['Size'] = 'h1'
+    x[10]['Color'] = 'Red';
+    x[10]['Size'] = 'h1';
 
     for (var i in x) {
         document.body.innerHTML += '<' + x[i]['Size'] + '><a style="text-align:left;float:left;color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + x[i]['Name'] + '</a></' + x[i]['Size'] + '>';
-        //document.body.innerHTML += 'Name: <input style="text-align:left;float:left;" type="text" id="myText" value="Mickey">';
-        //document.body.innerHTML += 'Url: <input type="text" id="myText" value="Mickey">';
-        //document.body.innerHTML += 'Color: <input type="text" id="myText" value="Mickey">';
-        //document.body.innerHTML += 'Size: <input type="text" id="myText" value="Mickey">'
+        document.body.innerHTML += '<button type="button" onclick="alert("Hello world!")">Click Me!</button>';
+        document.body.innerHTML += ' Name: <input type="text" id="myText" value="Mickey">';
+        document.body.innerHTML += ' Url: <input type="text" id="myText" value="Mickey">';
+        document.body.innerHTML += ' Color: <input type="text" id="myText" value="Mickey">';
+        document.body.innerHTML += ' Size: <input type="text" id="myText" value="Mickey">'
         document.body.innerHTML += '<br><br>';
     }
 </script>
-</html>
