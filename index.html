@@ -79,7 +79,7 @@
         document.cookie = '';
         for (var i in x) {
             for (var i2 in x[i]) {
-                document.cookie += x[i][i2] + ';';
+                document.cookie = '' + x[i][i2] + ';';
             }
         }
         console.log(document.cookie);
