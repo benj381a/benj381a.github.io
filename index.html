@@ -87,7 +87,11 @@
 
             for (var i in str2) {
                 var str3 = str2[i].split('¤');
-                console.log(str3[0]);
+
+                var number = parseInt(str3[0]);
+                var type = str3[1];
+
+                console.log(number + ', ' + type);
             }
         }
         function UpdateLinks() {
