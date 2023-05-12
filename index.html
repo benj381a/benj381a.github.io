@@ -107,7 +107,7 @@
         function UpdateLinks() {
             document.body.innerHTML = '';
             for (var i in x) {
-                document.body.innerHTML += '<' + x[i]['Size'] + '><a style="text-align:left;float:left;color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + x[i]['Name'] + '</a></' + x[i]['Size'] + '>';
+                document.body.innerHTML += '<' + x[i]['Size'] + '><a id="'+i+'" style="text-align:left;float:left;color:' + x[i]['Color'] + '" href="' + x[i]['Url'] + '">' + x[i]['Name'] + '</a></' + x[i]['Size'] + '>';
                 document.body.innerHTML += '<div id="myDiv' + i + '" onclick="createButton(' + i + ');">Edit</div>';
                 document.body.innerHTML += '<br><br>';
             }
@@ -125,6 +125,26 @@
             UpdateLinks();
         }
 
+        function RemoveLink(i2) {
+            var div = (document.all) ? document.all['myDiv2'] : document.getElementById('myDiv2' + i2);
+            var data = (document.all) ? document.all['data'] : document.getElementById('data');
+            var link = (document.all) ? document.all[i2] : document.getElementById(i2);
+            data.outerHTML = '';
+            div.outerHTML = '';
+            link.outerHTML = '';
+
+
+            for (var i in x) {
+                if (i > i2) {
+                    x[i - 1] = x[i];
+                    x[i] = null;
+                }
+            }
+
+            console.log(x);
+            UpdateLinks;
+        }
+
         function createButton(i) {
             if (deb) {
                 deb = false;
@@ -134,7 +154,8 @@
                     + '<h5 id="data"><p> Name: </p><input type = "text" id = "name' + i + '" value = "'+x[i]['Name']+'"> '
                     + '<p> Url: </p><input type = "text" id = "url' + i + '" value = "'+x[i]['Url']+'"> '
                     + '<p> Color: </p><input type = "text" id = "color' + i + '" value = "'+x[i]['Color']+'"> '
-                    + '<p> Size: </p><input type = "text" id = "size' + i + '" value = "'+x[i]['Size']+'"></h5>';
+                    + '<p> Size: </p><input type = "text" id = "size' + i + '" value = "' + x[i]['Size'] + '">'
+                    + '<br><br><button id="delBtn" name="delBtn" onclick="RemoveLink(' + i + ');">Remove link</button></h5>';
             }
             
         }
