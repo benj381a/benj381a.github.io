@@ -86,7 +86,7 @@
             var str2 = str.split(';');
 
             for (var i in str2) {
-                var number = i.split(':');
+                var number = parseInt(i.charAt(0));
                 console.log(number);
             }
         }
