@@ -99,7 +99,6 @@
 
 
                     x[number][type] = value;
-                    console.log(parseInt(x.length));
                 }
                 
             }
@@ -111,10 +110,20 @@
                 document.body.innerHTML += '<div id="myDiv' + i + '" onclick="createButton(' + i + ');">Edit</div>';
                 document.body.innerHTML += '<br><br>';
             }
+            document.body.innerHTML += '<button id="btn" name="btn">Create new link</button>'
             saveX();
         }
         UpdateLinks();
-        
+
+        function CreateLink() {
+            x[x.length] = {};
+            x[x.length]['Name'] = 'Null';
+            x[x.length]['Url'] = '';
+            x[x.length]['Color'] = 'Black';
+            x[x.length]['Size'] = 'h1';
+            UpdateLinks();
+        }
+
         function createButton(i) {
             if (deb) {
                 deb = false;
