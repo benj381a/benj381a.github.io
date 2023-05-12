@@ -97,8 +97,9 @@
                     var type = str4[0];
                     var value = str4[1];
 
-
-                    x[number][type] = value;
+                    if (number && type && value) {
+                        x[number][type] = value;
+                    }
                 }
                 
             }
