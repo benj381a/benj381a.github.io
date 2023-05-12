@@ -91,8 +91,11 @@
                     var str4 = str3[1].split('=');
 
                     var number = parseInt(str3[0]);
-                    var type = str4[1];
+                    var type = str4[0];
+                    var value = str4[1];
 
+
+                    x[number][type] = value;
                     console.log(number + ', ' + type);
                 }
                 
