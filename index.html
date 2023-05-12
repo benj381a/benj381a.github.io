@@ -87,11 +87,10 @@
 
             for (var i in str2) {
                 var str3 = str2[i].split('¤');
-                console.log(str3[1]);
                 //var str4 = str3[1].split('=');
 
                 var number = parseInt(str3[0]);
-                var type = str4[1];
+                var type = str3[1];
 
                 console.log(number + ', ' + type);
             }
