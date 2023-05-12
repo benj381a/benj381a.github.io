@@ -86,7 +86,7 @@
             var str2 = str.split(';');
 
             for (var i in str2) {
-                var number = str2[i];
+                var number = Math.floor((i+1)/4);
                 console.log(i+', '+number);
             }
         }
