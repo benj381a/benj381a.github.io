@@ -8,7 +8,7 @@
     <script>
         var deb = true;
 
-    var x = {};
+        var x = {};
 
         x[0] = {};
         x[0]['Name'] = 'Aula';
@@ -75,6 +75,9 @@
         x[10]['Url'] = 'https://minside.alinea.dk/mine-adgange';
         x[10]['Color'] = 'Red';
         x[10]['Size'] = 'h1';
+
+        document.cookie = 'Hello wolrd';
+        console.log(document.cookie);
         function UpdateLinks() {
             document.body.innerHTML = '';
             for (var i in x) {
