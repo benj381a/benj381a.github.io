@@ -78,7 +78,7 @@
 
         for (var i in x) {
             for (var i2 in x[i]) {
-                document.cookie = ''+ i + ':' + i2 + '=' + x[i][i2] + '                                         ';
+                document.cookie = ''+ i + '¤' + i2 + '=' + x[i][i2] + '                                         ';
             }
         }
         if (document.cookie) {
@@ -86,8 +86,8 @@
             var str2 = str.split(';');
 
             for (var i in str2) {
-                var str3 = str2[i].split(':');
-                console.log(str3);
+                var str3 = str2[i].split('¤');
+                console.log(str3[0]);
             }
         }
         function UpdateLinks() {
