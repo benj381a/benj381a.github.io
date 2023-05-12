@@ -78,10 +78,13 @@
 
         for (var i in x) {
             for (var i2 in x[i]) {
-                document.cookie = ''+ i + '' + i2 + '=' + x[i][i2] + '                                         ';
+                document.cookie = ''+ i + ':' + i2 + '=' + x[i][i2] + '                                         ';
             }
         }
-        console.log(document.cookie);
+        if (document.cookie.length < 0) {
+            var str = document.cookie;
+            str2 str.split(';');
+        }
         function UpdateLinks() {
             document.body.innerHTML = '';
             for (var i in x) {
